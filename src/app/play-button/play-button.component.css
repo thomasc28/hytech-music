@@ -1,0 +1,8 @@
+.play-button {
+  font-size: 2em;
+  cursor: pointer;
+}
+
+.play-button:hover {
+  opacity: .6;
+}

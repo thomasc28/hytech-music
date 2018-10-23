@@ -1,0 +1,31 @@
+.album-info {
+  width: 100%;
+  border: 1px solid black;
+  height: 70%;
+  display: flex;
+  box-sizing: border-box;
+}
+
+.album-art,
+.album-track-list {
+  flex: 1 1 auto;
+}
+
+.album-art {
+  background-color: #3f51b5;
+}
+
+.album-track-list {
+  position: relative;
+  border-left: 1px solid black;
+  background-color: cornsilk;
+}
+
+.album-purchase {
+  height: 100px;
+  background-color: #e91e63;
+  border-top: 1px solid black;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+}
