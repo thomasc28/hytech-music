@@ -10,7 +10,7 @@ import { Album } from './models/album.model';
 export class AppComponent {
 
   album: Album = {
-    artist: 'ariana grande',
+    artist: 'Ariana Grande',
     coverUrl: 'https://upload.wikimedia.org/wikipedia/en/7/7a/Sweetener_album_cover.png',
     title: 'Sweetener',
     releaseDate: new Date('9/18/2018'),
