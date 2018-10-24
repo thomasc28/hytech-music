@@ -12,20 +12,37 @@
 }
 
 .album-art {
+  padding: 10px;
   background-color: #3f51b5;
+  font-size: 10px;
+  width: 0%;
+}
+
+.Track-list-span{
+    width: 100%;
+    background:gold;
+    color: white;
 }
 
 .album-track-list {
   position: relative;
   border-left: 1px solid black;
   background-color: cornsilk;
+  width: 40%;
+}
+
+.album-Img
+{
+  width: 220px;
+  height: 220px;
 }
 
 .album-purchase {
-  height: 100px;
+  height: 20px;
   background-color: #e91e63;
   border-top: 1px solid black;
   width: 100%;
   position: absolute;
   bottom: 0;
+  padding: 5px;
 }
