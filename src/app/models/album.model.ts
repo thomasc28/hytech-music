@@ -3,5 +3,6 @@ export interface Album {
   coverUrl: string;
   title: string;
   releaseDate: Date;
+  owned: boolean;
   trackList: string[];
 }
