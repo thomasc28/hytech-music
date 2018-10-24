@@ -6,14 +6,12 @@
   </div>
 
   <div class="album-track-list">
-    <ol>
-      <li *ngFor="let track of album.trackList">
-        {{ track }}
-      </li>
-    </ol>
+    <div class="Track-list-span">Track List</div>
+    <app-track *ngFor="let song of album.trackList" [songName]="song" (songSelected)="newSongPlaying($event)">
+    </app-track>
 
     <div class="album-purchase">
-        <button *ngIf="album.releaseDate">Buy Now!</button>
+      <button *ngIf="album.releaseDate">Buy Now!</button>
     </div>
   </div>
 </div>
