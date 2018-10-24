@@ -1,4 +1,4 @@
-import { Component, OnInit, Input } from '@angular/core';
+import { Component, Input } from '@angular/core';
 
 @Component({
   selector: 'app-track',
@@ -6,7 +6,5 @@ import { Component, OnInit, Input } from '@angular/core';
   styleUrls: ['./track.component.css']
 })
 export class TrackComponent{
-
   @Input('songName') name: string;
-
 }
