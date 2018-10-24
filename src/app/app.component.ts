@@ -8,7 +8,6 @@ import { Album } from './models/album.model';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  currentPlayingSong: string = "test";
   album: Array<Album> = [
     {
       artist: 'Ariana Grande',
