@@ -1,4 +1,4 @@
-<app-album-header></app-album-header>
+<app-album-header [(nowPlaying)]="currentPlayingSong"></app-album-header>
 <div class="album-info">
   <div class="album-art" *ngFor="let album of album">
     <h2>{{ album.artist }} - {{ album.title }}</h2>
