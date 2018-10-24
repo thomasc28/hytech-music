@@ -1,11 +1,12 @@
 <app-album-header></app-album-header>
-<div class="album-info">
-  <div class="album-art" *ngFor="let album of album">
+<div class="album-info" *ngFor="let album of album">
+  <div class="album-art">
     <h2>{{ album.artist }} - {{ album.title }}</h2>
     <img [src]="album.coverUrl">
   </div>
 
   <div class="album-track-list">
+    <div class="Track-list-span">Track List</div>
     <ol>
       <li *ngFor="let track of album.trackList">
         {{ track }}
