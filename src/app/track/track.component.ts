@@ -1,4 +1,4 @@
-import { Component, OnInit, Input } from '@angular/core';
+import { Component, EventEmitter, Output, Input } from '@angular/core';
 
 @Component({
   selector: 'app-track',
@@ -8,5 +8,10 @@ import { Component, OnInit, Input } from '@angular/core';
 export class TrackComponent{
 
   @Input('songName') name: string;
+  @Output() songSelected = new EventEmitter<string>();
 
+  emitSongSelection(select: boolean)
+  {
+    this.songSelected.emit(this.name);
+  }
 }

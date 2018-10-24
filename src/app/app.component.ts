@@ -36,6 +36,8 @@ export class AppComponent {
     }
   ];
 
-
+  newSongPlaying(songName: string) {
+    this.currentPlayingSong = songName;
+  }
 
 }

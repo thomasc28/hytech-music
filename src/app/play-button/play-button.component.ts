@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, EventEmitter, Output } from '@angular/core';
 
 @Component({
   selector: 'app-play-button',
@@ -6,5 +6,9 @@ import { Component } from '@angular/core';
   styleUrls: ['./play-button.component.css']
 })
 export class PlayButtonComponent {
+  @Output() selected = new EventEmitter<boolean>();
 
+  songSelect(select: boolean) {
+    this.selected.emit(select);
+  }
 }
