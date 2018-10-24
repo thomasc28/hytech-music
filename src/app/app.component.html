@@ -1,17 +1,23 @@
 <app-album-header></app-album-header>
-<div class="album-info">
-  <div class="album-art">
-    ALBUM ART
-    <!-- INSERT HTML HERE -->
+<div class="album-info" *ngFor = "let item of album">
+  <div class="album-art" >
+    <h2>{{ item.artist}} - {{ item.title}}</h2>
+    <img src="{{item.coverUrl}}">
+    <p>{{item.releaseDate}}</p>
   </div>
 
-  <div class="album-track-list">
+  <div class="album-track-list" >
     ALBUM TRACK LIST
-    <!-- INSERT HTML HERE -->
+    <app-track *ngFor = "let song of item.trackList"
+    [songName] = "song">
+    </app-track>
+    
 
     <div class="album-purchase">
+
+      <button *ngIf="album.releaseDate">BUY NOW!</button>
       ALBUM PURCHASE
-      <!-- INSERT HTML HERE -->
+      
     </div>
   </div>
 </div>

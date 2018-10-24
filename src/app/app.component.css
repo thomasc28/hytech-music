@@ -9,12 +9,13 @@
 .album-art,
 .album-track-list {
   flex: 1 1 auto;
+  font-size: 25px;
 }
 
 .album-art {
   padding: 10px;
   background-color: #3f51b5;
-  font-size: 10px;
+  font-size: 30px;
   width: 0%;
 }
 
